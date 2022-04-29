@@ -3,13 +3,12 @@ node {
 
     stage('Clone repository') {
 
-
         checkout scm
     }
 
     stage('Build image') {
 
-       app = docker.build("mehdiouzzid/test")
+       app = docker.build("mehdiouzz/test")
     }
 
     stage('Test image') {
